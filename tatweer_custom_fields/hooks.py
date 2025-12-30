@@ -137,13 +137,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Journal Entry": {
+		"validate": "tatweer_custom_fields.journal_entry.set_custom_internal_id"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
