@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Purchase Order Item",
+ "links": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2025-11-17 12:53:56.409740",
+   "default_value": null,
+   "doc_type": "Purchase Order Item",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "rate",
+   "idx": 0,
+   "is_system_generated": 0,
+   "modified": "2025-12-30 20:52:23.913114",
+   "modified_by": "Administrator",
+   "module": "Tatweer Custom Fields",
+   "name": "Purchase Order Item-rate-precision",
+   "owner": "zahredden1212@gmail.com",
+   "property": "precision",
+   "property_type": "Select",
+   "row_name": null,
+   "value": "9"
+  }
+ ],
+ "sync_on_migrate": 1
+}
