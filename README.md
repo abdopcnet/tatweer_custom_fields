@@ -1,5 +1,8 @@
 ### Tatweer Custom Fields
 
+![Version](https://img.shields.io/badge/version-30.12.2025-blue)
+
+
 Tatweer Custom Fields
 
 ### Installation
