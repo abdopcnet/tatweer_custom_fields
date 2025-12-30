@@ -2,26 +2,34 @@
 
 ![Version](https://img.shields.io/badge/version-30.12.2025-blue)
 
-Custom fields and enhancements for ERPNext accounting DocTypes.
+Custom fields and enhancements for ERPNext DocTypes across accounting, HR, healthcare, and inventory modules.
 
 ## Features Preview
 
-### Payment Entry Enhancements
-- **Custom Internal ID**: Auto-populated internal reference field
-- **Custom Month**: Hidden field for month-based tracking
-- **Custom Reference Document**: Link to related documents
-- **Custom Sections**: Additional organizational sections for attachments and references
+### Accounting
+- **Payment Entry**: Custom internal ID, month tracking, reference documents, organizational sections
+- **Journal Entry**: Custom internal ID, month-based naming series (`ACC-JV-.YY-.{month}.-`), field ordering, enhanced permissions
+- **Journal Entry Account**: Extended reference type options
 
-### Journal Entry Enhancements
-- **Custom Internal ID**: Auto-populated internal reference field (إشاري داخلي)
-- **Custom Month**: Hidden field for month-based tracking
-- **Auto-naming Series**: Custom naming format with month support (`ACC-JV-.YY-.{month}.-`)
-- **Field Ordering**: Customized field layout and organization
-- **Account Permissions**: Enhanced account field permissions
+### HR & Payroll
+- **Employee Advance**: Workflow state field, mode of payment filters
+- **Expense Claim**: Custom field enhancements
+- **Leave Application & Leave Type**: Custom field additions
+- **Salary Slip & Salary Detail**: Payroll field enhancements
+
+### Healthcare
+- **Healthcare Claim & Items**: Custom field support
+- **Healthcare Provider Claims & Benefits**: Provider-specific customizations
+
+### Inventory
+- **Stock Entry & Details**: Inventory tracking enhancements
+- **Material Request & Items**: Procurement field customizations
+
+### Loans
+- **Loan Disbursement**: Loan management field enhancements
 
 ### Automation
-- **Auto Internal ID**: Automatically sets `custom_internal_id` to document name on validation
-- **Document Events**: Hooks on Payment Entry and Journal Entry validation
+- **Auto Internal ID**: Automatically sets `custom_internal_id` to document name on validation for Payment Entry and Journal Entry
 
 ## Installation
 
