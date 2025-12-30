@@ -140,6 +140,9 @@ app_license = "mit"
 doc_events = {
 	"Journal Entry": {
 		"validate": "tatweer_custom_fields.journal_entry.set_custom_internal_id"
+	},
+	"Payment Entry": {
+		"validate": "tatweer_custom_fields.payment_entry.set_custom_internal_id"
 	}
 }
 
