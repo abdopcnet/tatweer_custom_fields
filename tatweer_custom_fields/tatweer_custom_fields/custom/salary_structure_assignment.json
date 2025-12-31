@@ -116,5 +116,5 @@
    "value": "[\"employee\", \"employee_name\", \"department\", \"designation\", \"grade\", \"column_break_6\", \"salary_structure\", \"from_date\", \"income_tax_slab\", \"column_break_11\", \"company\", \"payroll_payable_account\", \"currency\", \"section_break_7\", \"custom_basic_salary\", \"base\", \"column_break_9\", \"variable\", \"amended_from\", \"opening_balances_section\", \"taxable_earnings_till_date\", \"column_break_20\", \"tax_deducted_till_date\", \"section_break_17\", \"payroll_cost_centers\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
