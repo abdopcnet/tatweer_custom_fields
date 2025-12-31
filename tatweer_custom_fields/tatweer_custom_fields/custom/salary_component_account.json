@@ -157,5 +157,5 @@
    "value": "[\"company\", \"account\", \"custom_party_type\", \"custom_party\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
