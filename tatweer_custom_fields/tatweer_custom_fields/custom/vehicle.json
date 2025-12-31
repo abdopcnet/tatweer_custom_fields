@@ -720,5 +720,5 @@
    "value": "[\"license_plate\", \"make\", \"column_break_3\", \"model\", \"vehicle_details\", \"last_odometer\", \"acquisition_date\", \"location\", \"column_break_8\", \"chassis_no\", \"vehicle_value\", \"employee\", \"custom_section_break_d9wvc\", \"custom_technical_inspection\", \"custom_compulsory_insurance_\", \"custom_driving_permit\", \"custom_tire_validity\", \"custom_column_break_cwtam\", \"custom_comprehensive_insurance\", \"custom_roaming_license\", \"custom_gps\", \"insurance_details\", \"insurance_company\", \"policy_no\", \"column_break_15\", \"start_date\", \"end_date\", \"additional_details\", \"fuel_type\", \"uom\", \"carbon_check_date\", \"column_break_21\", \"color\", \"wheels\", \"doors\", \"amended_from\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
