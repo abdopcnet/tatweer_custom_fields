@@ -28,5 +28,5 @@
    "value": "[\"designation_type\", \"custom_salary_details\", \"custom_basic_salary\", \"custom_responsibility_bonus\", \"custom_fuel_and_communications_allowance\", \"custom_distinction_bonus\", \"is_it_a_leadership_position\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
