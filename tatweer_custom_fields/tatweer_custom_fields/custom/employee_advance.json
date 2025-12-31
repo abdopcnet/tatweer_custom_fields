@@ -39,7 +39,7 @@
    "length": 0,
    "link_filters": null,
    "mandatory_depends_on": null,
-   "modified": "2025-12-30 15:53:01.203365",
+   "modified": "2025-12-31 22:25:09.621752",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Employee Advance-workflow_state",
@@ -82,7 +82,7 @@
    "field_name": "mode_of_payment",
    "idx": 0,
    "is_system_generated": 0,
-   "modified": "2025-12-30 20:52:21.140829",
+   "modified": "2025-12-31 22:26:36.381118",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Employee Advance-mode_of_payment-link_filters",
@@ -105,9 +105,9 @@
    "field_name": "naming_series",
    "idx": 0,
    "is_system_generated": 1,
-   "modified": "2025-12-30 17:27:46.216080",
+   "modified": "2025-12-31 22:26:36.476743",
    "modified_by": "Administrator",
-   "module": null,
+   "module": "Tatweer Custom Fields",
    "name": "Employee Advance-naming_series-options",
    "owner": "Administrator",
    "property": "options",
@@ -116,5 +116,5 @@
    "value": "HR-EAD-.YYYY.-"
   }
  ],
- "sync_on_migrate": 1
+ "sync_on_migrate": 0
 }
