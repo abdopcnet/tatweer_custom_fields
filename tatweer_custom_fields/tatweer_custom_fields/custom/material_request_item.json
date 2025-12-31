@@ -28,5 +28,5 @@
    "value": "[[\"Item\",\"item_group\",\"!=\",\"\u0631\u0639\u0627\u064a\u0629 \u0635\u062d\u064a\u0629\"]]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
