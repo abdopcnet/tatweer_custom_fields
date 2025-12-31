@@ -120,5 +120,5 @@
    "value": "[\"employee\", \"employee_name\", \"family_member\", \"item\", \"invoice_number\", \"description\", \"claimed_amount\", \"approved_amount\", \"lifted_amount\", \"benefit_amount\", \"healthcare_policy_assignment\", \"item_balance\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
