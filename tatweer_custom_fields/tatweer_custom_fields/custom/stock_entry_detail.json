@@ -17,7 +17,7 @@
    "field_name": "barcode",
    "idx": 0,
    "is_system_generated": 1,
-   "modified": "2025-12-31 22:26:36.455633",
+   "modified": "2025-12-31 23:37:10.332095",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Stock Entry Detail-barcode-hidden",
