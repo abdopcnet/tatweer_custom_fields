@@ -74,5 +74,5 @@
    "value": "\nSales Invoice\nPurchase Invoice\nJournal Entry\nSales Order\nPurchase Order\nExpense Claim\nAsset\nLoan\nPayroll Entry\nEmployee Advance\nExchange Rate Revaluation\nInvoice Discounting\nFees\nFull and Final Statement\nPayment Entry\nLoan Interest Accrual"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
