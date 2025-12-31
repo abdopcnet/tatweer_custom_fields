@@ -39,7 +39,7 @@
    "length": 0,
    "link_filters": null,
    "mandatory_depends_on": null,
-   "modified": "2025-12-30 20:51:33.928447",
+   "modified": "2025-12-31 22:25:09.560522",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Additional Salary-custom_calculation_based_on_days",
@@ -103,7 +103,7 @@
    "length": 0,
    "link_filters": null,
    "mandatory_depends_on": null,
-   "modified": "2025-12-30 20:51:33.287680",
+   "modified": "2025-12-31 22:25:09.559833",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Additional Salary-custom_number_of_days",
@@ -167,9 +167,9 @@
    "length": 0,
    "link_filters": null,
    "mandatory_depends_on": null,
-   "modified": "2025-09-28 09:42:39.653255",
+   "modified": "2025-12-31 22:25:09.559002",
    "modified_by": "Administrator",
-   "module": null,
+   "module": "Tatweer Custom Fields",
    "name": "Additional Salary-workflow_state",
    "no_copy": 1,
    "non_negative": 0,
@@ -210,7 +210,7 @@
    "field_name": null,
    "idx": 0,
    "is_system_generated": 0,
-   "modified": "2025-12-30 20:52:19.966731",
+   "modified": "2025-12-31 22:26:36.412809",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Additional Salary-main-field_order",
@@ -233,9 +233,9 @@
    "field_name": "naming_series",
    "idx": 0,
    "is_system_generated": 1,
-   "modified": "2025-12-30 17:27:51.159351",
+   "modified": "2025-12-31 22:26:36.415570",
    "modified_by": "Administrator",
-   "module": null,
+   "module": "Tatweer Custom Fields",
    "name": "Additional Salary-naming_series-options",
    "owner": "Administrator",
    "property": "options",
@@ -244,5 +244,5 @@
    "value": "HR-ADS-.YY.-.MM.-"
   }
  ],
- "sync_on_migrate": 1
+ "sync_on_migrate": 0
 }
