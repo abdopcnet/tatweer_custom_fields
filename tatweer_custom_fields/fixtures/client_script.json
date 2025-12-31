@@ -1,0 +1,123 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Additional Salary",
+  "enabled": 0,
+  "modified": "2025-12-31 22:34:02.646663",
+  "module": "Tatweer Custom Fields",
+  "name": "Additional Salary",
+  "script": "frappe.ui.form.on('Additional Salary', {\n// \trefresh(frm) {\n// \t\t// your code here\n// \t},\n\tset_component_query: function (frm) {\n    if (!frm.doc.company) return;\n    let filters = {custom_allow_it_in_monthly_variables: 1};\n    // if (frm.doc.type) {\n    //     filters.type = frm.doc.type;\n    // }\n    frm.set_query(\"salary_component\", function () {\n        return {\n            filters: filters,\n        };\n    });\n},\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Task",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.652148",
+  "module": "Tatweer Custom Fields",
+  "name": "crea PI from task",
+  "script": "frappe.ui.form.on('Task', {\n    refresh: function(frm) {\n        // Add a custom button to the Task form\n        // This button will only appear if the task is not a new document (i.e., it has been saved at least once)\n        // and if it's not cancelled or submitted.\n        if (!frm.is_new() && frm.doc.docstatus === 0) { // docstatus 0 means Draft/Active\n            frm.add_custom_button(__('Create Purchase Invoice'), function() {\n                // Open a new Purchase Invoice form\n                frappe.new_doc('Purchase Invoice', {\n                    // You can pre-fill fields here if needed.\n                    // For example, if you want to link the Purchase Invoice back to the Task:\n                    // 'custom_task_link_field': frm.doc.name // Assuming you have a custom field in Purchase Invoice\n                                                              // to link back to the Task.\n                    // 'project': frm.doc.project // If you want to link to the same project\n                });\n            }, __('Actions')); // 'Actions' is the group name for the button\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Loan Application",
+  "enabled": 0,
+  "modified": "2025-12-31 22:34:02.651575",
+  "module": "Tatweer Custom Fields",
+  "name": "Loan Application restraction",
+  "script": "// frappe.ui.form.on('Loan Application', {\n// \trefresh(frm) {\n// \t\t// your code here\n// \t}\n// })\nfrappe.listview_settings['Loan Application'] = {\n    onload: function(listview) {\n        frappe.call({\n            method: \"frappe.client.get_value\",\n            args: {\n                doctype: \"Employee\",\n                filters: { \"user_id\": frappe.session.user },\n                fieldname: \"name\"\n            },\n            callback: function(r) {\n                if (r.message) {\n                    let employee = r.message.name;\n                    frappe.route_options = { \"applicant\": employee };\n                    listview.refresh();\n                }\n            }\n        });\n    }\n};\n",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Task",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.651002",
+  "module": "Tatweer Custom Fields",
+  "name": "task completed date check",
+  "script": "frappe.ui.form.on('Task', {\n\tcompleted_on: function(frm) {\n\t\tif (frm.doc.completed_on && frm.doc.exp_start_date){\n\t\t    if (frm.doc.completed_on < frm.doc.exp_start_date){\n\t\t        msgprint(('You can not select completed date pefore the task expacted start date '));\n                validated = false;\n\t\t    }\n\t\t    \n\t\t}\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Expense Claim",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.645878",
+  "module": "Tatweer Custom Fields",
+  "name": "Expense Claim Detail",
+  "script": "frappe.ui.form.on('Expense Claim', {\n\tvalidate(frm) {\n        $.each(frm.doc.advances || [], function (i, advance) {\n// \t\tadvance.allocated_amount = 99999;\n        frm.doc.advances[i].allocated_amount = frm.doc.total_claimed_amount\n        // \t\t\tif (amount_to_be_allocated >= advance.unclaimed_amount - advance.return_amount) {\n        // \t\t\t\tadvance.allocated_amount =\n        // \t\t\t\t\tfrm.doc.advances[i].unclaimed_amount - frm.doc.advances[i].return_amount;\n        // \t\t\t\tamount_to_be_allocated -= advance.allocated_amount;\n        // \t\t\t} else {\n        // \t\t\t\tadvance.allocated_amount = 99999;\n        // \t\t\t\tamount_to_be_allocated = 0;\n        // \t\t\t}\n        \t\t\tfrm.refresh_field(\"advances\");\n        \t\t});\n        \t\t},\n\t\n})\n\n// frappe.ui.form.on('Expense Claim Detail', {\n// \tamount: function (frm, cdt, cdn) {\n// \t    console.log('hi')\n// \t\tfrm.trigger(\"calculate_total\");\n// \t\tlet amount_to_be_allocated = frm.doc.grand_total;\n// \t\tfrm.trigger(\"update_employee_advance_claimed_amount\");\n\n//         $.each(frm.doc.advances || [], function (i, advance) {\n//     \t\t\t\tadvance.allocated_amount = 99999;\n// frm.doc.advances[i].allocated_amount = 98888\n//         // \t\t\tif (amount_to_be_allocated >= advance.unclaimed_amount - advance.return_amount) {\n//         // \t\t\t\tadvance.allocated_amount =\n//         // \t\t\t\t\tfrm.doc.advances[i].unclaimed_amount - frm.doc.advances[i].return_amount;\n//         // \t\t\t\tamount_to_be_allocated -= advance.allocated_amount;\n//         // \t\t\t} else {\n//         // \t\t\t\tadvance.allocated_amount = 99999;\n//         // \t\t\t\tamount_to_be_allocated = 0;\n//         // \t\t\t}\n//         \t\t\tfrm.refresh_field(\"advances\");\n//         \t\t});\n// \t\t}\n// })",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Leave Application",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.648643",
+  "module": "Tatweer Custom Fields",
+  "name": "leave application sick leave",
+  "script": "frappe.ui.form.on('Leave Application', {\n\trefresh(frm) {\n\t\n    if(cur_frm.doc.leave_type == \"إجازة مرضية\" && frm.doc.custom_medical_care_committee !=\"Approved\" && frm.doc.status ==\"Open\" ){\n        frm.set_df_property('status',  'readonly', 1);\n          if (frappe.user_roles.indexOf(\"لجنة الرعاية الطبية\") != -1 ) {\n            frm.add_custom_button(__('الموافقة من لجنة الرعاية الطبية'), function() {\n            frm.doc.custom_reviewed_by_the_medical_care_committee = 1\n            frm.set_value('custom_reviewed_by_the_medical_care_committee', 1);\n            frm.set_value('custom_medical_care_committee', \"Approved\");\n            frm.set_value('status', \"Approved\");\n            frm.set_value('workflow_state', \"Approved\");\n            frm.set_df_property('status',  'hidden', 0);\n            frm.set_df_property('status',  'readonly', 1);\n\n            console.log(\"approve\")\n          frm.refresh_fields();\n          frm.save();\n          frm.set_value('workflow_state', \"Approved\");\n          frm.save();\n          frm.refresh();\n\n            },\n        );\n        }\n    }\n    \n    if(cur_frm.doc.leave_type == \"إجازة مرضية\" && frm.doc.custom_medical_care_committee !=\"Rejected\" && frm.doc.status ==\"Open\" ){\n        frm.set_df_property('status',  'readonly', 1);\n          if (frappe.user_roles.indexOf(\"لجنة الرعاية الطبية\") != -1 ) {\n            frm.add_custom_button(__('رفض لجنة الرعاية الطبية'), function() {\n            frm.doc.custom_reviewed_by_the_medical_care_committee = 1\n            frm.set_value('custom_reviewed_by_the_medical_care_committee', 0);\n            frm.set_value('custom_medical_care_committee', \"Rejected\");\n            // frm.set_value('status', \"Rejected\");\n            // frm.set_value('workflow_state', \"Rejected\");\n            // frm.set_df_property('status',  'hidden', 0);\n            frm.set_df_property('status',  'readonly', 1);\n\n            console.log(\"approve\")\n          frm.refresh_fields();\n          frm.save();\n          frm.refresh();\n\n            },\n        );\n        }\n    }\n        if(cur_frm.doc.leave_type == \"إجازة مرضية\"){\n            frm.set_df_property('status',  'readonly', 1);\n            console.log(\"approve1!!!!!!\")\n    }\n    \n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Payroll Entry",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.648043",
+  "module": "Tatweer Custom Fields",
+  "name": "Payroll Entry Review Workfllow",
+  "script": "frappe.ui.form.on('Payroll Entry', {\n\trefresh(frm) {\n\n\t\t// your code here\n    // frm.toggle_enable(\"Submit Salary Slip\", false);\n    if(!frm.doc.custom_salary_slip_reviewd){\n    $('.btn-primary[data-label=\"Submit%20Salary%20Slip\"]').toggle(false);\n    $('.btn-primary[data-label=\"%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8\"]').toggle(false);\n    }\n        if (frappe.user_roles.indexOf(\"مدير المرتبات\") == -1 ){\n            console.log(\"false\")\n    $('.btn-primary[data-label=\"Submit%20Salary%20Slip\"]').toggle(false);\n    $('.btn-primary[data-label=\"%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9%20%D9%83%D8%B4%D9%81%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8\"]').toggle(false);\n\n    }\n    if(cur_frm.doc.salary_slips_created  && !frm.doc.salary_slips_submitted  && (frm.doc.docstatus !=2) && !frm.doc.custom_salary_slip_reviewd){\n          if (frappe.user_roles.indexOf(\"مراجع المرتبات\") != -1 ) {\n            frm.add_custom_button(__('تمت مراجعة البيانات'), function() {\n            frm.set_value('custom_salary_slip_reviewd', 1);\n             $('.btn-primary[data-label=\"Submit%20Salary%20Slip\"]').toggle(true);\n            console.log(\"DDDDOne\")\n          frm.refresh_fields();\n          frm.save();\n          frm.refresh();\n\n            },\n        );\n        }\n    }\n        if(cur_frm.doc.salary_slips_created  && !frm.doc.salary_slips_submitted  && (frm.doc.docstatus !=2) && frm.doc.custom_salary_slip_reviewd){\n          if (frappe.user_roles.indexOf(\"مراجع المرتبات\") != -1 ) {\n            frm.add_custom_button(__('بحاجة إلى مراجعة'), function() {\n            frm.set_value('custom_salary_slip_reviewd', 0);\n             $('.btn-primary[data-label=\"Submit%20Salary%20Slip\"]').toggle(false);\n            console.log(\"DDDDOne\")\n          frm.refresh_fields();\n          frm.save();\n          frm.refresh();\n\n            },\n        );\n        }\n    }\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Salary Slip",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.647408",
+  "module": "Tatweer Custom Fields",
+  "name": "cancale salary slip",
+  "script": "frappe.ui.form.on('Salary Slip', {\n\tsetup(frm) {\n        frm.ignore_doctypes_on_cancel_all = [\"Loan Repayment\"];\n        }\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Loan Repayment",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.650436",
+  "module": "Tatweer Custom Fields",
+  "name": "loan repayment",
+  "script": "frappe.ui.form.on('Loan Repayment', {\n\tsetup(frm) {\n\t        frm.ignore_doctypes_on_cancel_all = [\"Salary Slip\"];\n\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Journal Entry",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.649825",
+  "module": "Tatweer Custom Fields",
+  "name": "get month from posting date",
+  "script": "frappe.ui.form.on('Journal Entry', {\n    posting_date: function(frm) {\n        if (frm.doc.posting_date) {\n            // Convert date string to JS Date object\n            let d = frappe.datetime.str_to_obj(frm.doc.posting_date);\n\n            // getMonth() returns 0–11, so add 1 to make it 1–12\n            let month_number = d.getMonth() + 1;\n\n            // Set the int field with the month number\n            frm.set_value('custom_month', month_number);\n        } else {\n            // Clear month if date is cleared\n            frm.set_value('custom_month', null);\n        }\n    }\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Payment Entry",
+  "enabled": 1,
+  "modified": "2025-12-31 22:34:02.649243",
+  "module": "Tatweer Custom Fields",
+  "name": "set month from postin date payment entry",
+  "script": "frappe.ui.form.on('Payment Entry', {\n    posting_date: function(frm) {\n        if (frm.doc.posting_date) {\n            // Convert date string to JS Date object\n            let d = frappe.datetime.str_to_obj(frm.doc.posting_date);\n\n            // getMonth() returns 0–11, so add 1 to make it 1–12\n            let month_number = d.getMonth() + 1;\n\n            // Set the int field with the month number\n            frm.set_value('custom_month', month_number);\n        } else {\n            // Clear month if date is cleared\n            frm.set_value('custom_month', null);\n        }\n    }\n})",
+  "view": "Form"
+ }
+]
