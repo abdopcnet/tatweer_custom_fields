@@ -1,0 +1,103 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"rC0ImdUU-H\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062a\u062f\u0631\u064a\u0628</span>\",\"col\":12}},{\"id\":\"GnB-DjCaEz\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062a\u062f\u0631\u064a\u0628\",\"col\":4}}]",
+ "creation": "2025-08-17 11:27:34.708144",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062a\u062f\u0631\u064a\u0628",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062a\u062f\u0631\u064a\u0628",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u0627\u062d\u0629",
+   "link_count": 0,
+   "link_to": "Training Course Available",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0637\u0644\u0628 \u062f\u0648\u0631\u0629 \u062a\u062f\u0631\u064a\u0628\u064a\u0629",
+   "link_count": 0,
+   "link_to": "Employee Training Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0628\u0631\u0646\u0627\u0645\u062c \u062a\u062f\u0631\u064a\u0628\u064a",
+   "link_count": 0,
+   "link_to": "Training Program",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062d\u062f\u062b \u062a\u062f\u0631\u064a\u0628\u064a",
+   "link_count": 0,
+   "link_to": "Training Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Feedback",
+   "link_count": 0,
+   "link_to": "Training Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Result",
+   "link_count": 0,
+   "link_to": "Training Result",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-12-31 23:13:48.413631",
+ "modified_by": "Administrator",
+ "module": "Tatweer Custom Fields",
+ "name": "\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062a\u062f\u0631\u064a\u0628",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Training Manager"
+  }
+ ],
+ "sequence_id": 55.0,
+ "shortcuts": [],
+ "title": "\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062a\u062f\u0631\u064a\u0628"
+}
