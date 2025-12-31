@@ -733,5 +733,5 @@
    "value": "[\"custom_designation_type\", \"designation_name\", \"description\", \"appraisal_template\", \"required_skills_section\", \"skills\", \"custom_column_break_gsjcb\", \"custom_salary_details\", \"custom_is_it_a_leadership_position\", \"custom_basic_salary\", \"custom_responsibility_bonus\", \"custom_fuel_and_communications_allowance\", \"custom_distinction_bonus\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
