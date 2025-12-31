@@ -415,5 +415,5 @@
    "value": "[\"family_member\", \"item\", \"custom_column_break_pmgmm\", \"description\", \"claimed_amount\", \"total_amount\", \"lifted_amount\", \"healthcare_policy_assignment\", \"item_balance\"]"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
