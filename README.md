@@ -1,6 +1,6 @@
 # Tatweer Custom Fields
 
-![Version](https://img.shields.io/badge/version-31.12.2025-blue)
+![Version](https://img.shields.io/badge/version-1.1.2026-blue)
 
 Custom fields and enhancements for ERPNext DocTypes across accounting, HR, healthcare, and inventory modules.
 
