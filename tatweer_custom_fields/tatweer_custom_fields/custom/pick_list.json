@@ -17,7 +17,7 @@
    "field_name": "scan_barcode",
    "idx": 0,
    "is_system_generated": 1,
-   "modified": "2025-12-31 23:37:20.885661",
+   "modified": "2026-01-01 01:48:04.039535",
    "modified_by": "Administrator",
    "module": "Tatweer Custom Fields",
    "name": "Pick List-scan_barcode-hidden",
