@@ -1,0 +1,181 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"73BRm3wNYA\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0625\u062f\u0627\u0631\u0629 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629</span>\",\"col\":12}},{\"id\":\"6SoXvrjCmV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u0636\u0627\u0641\u0629 \u0645\u0648\u0638\u0641 \u062c\u062f\u064a\u062f\",\"col\":3}},{\"id\":\"wT_988qR1f\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0645\u0648\u0638\u0641\u0648\u0646 \u0627\u0644\u062d\u0627\u0644\u064a\u064a\u0648\u0646\",\"col\":3}},{\"id\":\"qv5W1gJqSe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0645\u0648\u0638\u0641\u0648\u0646 \u0627\u0644\u063a\u064a\u0631 \u0646\u0634\u0637\u0648\u0646\",\"col\":3}},{\"id\":\"n-TXavr0CY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"on4ftgLW7U\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629</b></span>\",\"col\":12}},{\"id\":\"D5Qz9eWfDh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Designation\",\"col\":3}},{\"id\":\"WDSBRLqrSJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Department\",\"col\":3}},{\"id\":\"ym1GVLxt6L\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>\u0645\u062a\u063a\u064a\u0631\u0627\u062a \u0627\u0644\u0645\u0631\u062a\u0628\u0627\u062a \u0627\u0644\u0634\u0647\u0631\u064a\u0629</b></span>\",\"col\":12}},{\"id\":\"2GO6jP_lFo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Additional Salary\",\"col\":3}},{\"id\":\"_RrA_7lnpZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Salary Structure Assignment\",\"col\":3}},{\"id\":\"rIQPB1YekQ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"X1CTTgVfTO\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\">\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0625\u062c\u0627\u0632\u0627\u062a</span>\",\"col\":12}},{\"id\":\"CnYKKwzYsp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bulk Leave Policy Assignment\",\"col\":3}},{\"id\":\"83XcvjCUlK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Policy Assignment\",\"col\":3}},{\"id\":\"5mQjRfnErO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u062a\u062e\u0635\u064a\u0635 \u0645\u062c\u0645\u0639 \u0644\u0644\u0625\u062c\u0627\u0632\u0627\u062a\",\"col\":3}},{\"id\":\"ipBkUm3LnP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u062a\u062e\u0635\u064a\u0635 \u0627\u0644\u0625\u062c\u0627\u0632\u0627\u062a\",\"col\":3}},{\"id\":\"IhkoO3NXL6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"xskNc4AER3\",\"type\":\"card\",\"data\":{\"card_name\":\"\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0628\u0634\u0631\u064a\u0629\",\"col\":4}},{\"id\":\"guLRiq0WbN\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u062d\u0636\u0648\u0631 \u0648\u0627\u0644\u0627\u0646\u0635\u0631\u0627\u0641\",\"col\":4}}]",
+ "creation": "2025-08-17 11:04:35.585307",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\u0625\u062f\u0627\u0631\u0629 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062d\u0636\u0648\u0631 \u0648\u0627\u0644\u0627\u0646\u0635\u0631\u0627\u0641",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0643\u0634\u0641 \u0627\u0644\u062d\u0636\u0648\u0631 \u0648\u0627\u0644\u0627\u0646\u0635\u0631\u0627\u0641",
+   "link_count": 0,
+   "link_to": "Employee Checkin",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0628\u0634\u0631\u064a\u0629",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "\u062a\u0642\u0631\u064a\u0631 \u0627\u062f\u0648\u0646\u0627\u062a \u0627\u0644\u062e\u0631\u0648\u062c",
+   "link_count": 0,
+   "link_to": "Exit Permission Request Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "\u0631\u0635\u064a\u062f \u0627\u062c\u0627\u0632\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641",
+   "link_count": 0,
+   "link_to": "Employee Leave Balance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "\u0645\u0644\u062e\u0635 \u0631\u0635\u064a\u062f \u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Employee Leave Balance Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-01-02 05:18:04.315581",
+ "modified_by": "Administrator",
+ "module": "Tatweer Custom Fields",
+ "name": "\u0625\u062f\u0627\u0631\u0629 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "HR User"
+  }
+ ],
+ "sequence_id": 47.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Bulk Leave Policy Assignment",
+   "link_to": "Bulk Leave Policy Assignment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u062a\u062e\u0635\u064a\u0635 \u0627\u0644\u0625\u062c\u0627\u0632\u0627\u062a",
+   "link_to": "Leave Allocation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Policy Assignment",
+   "link_to": "Leave Policy Assignment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u062a\u062e\u0635\u064a\u0635 \u0645\u062c\u0645\u0639 \u0644\u0644\u0625\u062c\u0627\u0632\u0627\u062a",
+   "link_to": "Bulk Leave allocation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "New",
+   "label": "\u0625\u0636\u0627\u0641\u0629 \u0645\u0648\u0638\u0641 \u062c\u062f\u064a\u062f",
+   "link_to": "Employee",
+   "stats_filter": "[[\"Employee\",\"status\",\"=\",\"Active\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Designation",
+   "link_to": "Designation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641\u0648\u0646 \u0627\u0644\u062d\u0627\u0644\u064a\u064a\u0648\u0646",
+   "link_to": "Employee",
+   "stats_filter": "[[\"Employee\",\"status\",\"=\",\"Active\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Department",
+   "link_to": "Department",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641\u0648\u0646 \u0627\u0644\u063a\u064a\u0631 \u0646\u0634\u0637\u0648\u0646",
+   "link_to": "Employee",
+   "stats_filter": "[[\"Employee\",\"status\",\"!=\",\"Active\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Additional Salary",
+   "link_to": "Additional Salary",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Salary Structure Assignment",
+   "link_to": "Salary Structure Assignment",
+   "stats_filter": "[[\"Salary Structure Assignment\",\"docstatus\",\"=\",\"1\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\u0625\u062f\u0627\u0631\u0629 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629"
+}
